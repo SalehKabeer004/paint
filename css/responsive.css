@@ -1,0 +1,72 @@
+@media only screen and (max-width:1024px) {
+    .container {
+        width: 90% !important;
+    }
+
+    .about {
+        position: relative;
+    }
+
+
+    .about .container {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 10%;
+        text-align: center;
+    }
+
+    .about .about-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about img {
+        width: 80%;
+    }
+
+    .work .container {
+        flex-direction: column;
+    }
+
+    .work .grid-container {
+        transform: translateY(0px);
+        width: 100%;
+    }
+
+    .work .grid-container .grid-item2,
+    .work .grid-container .grid-item4 {
+        transform: translateY(0px);
+    }
+
+    .testimonials {
+        margin-top: 100px;
+    }
+
+    .testimonials .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 32px;
+        padding: 50px;
+    }
+
+    .testimonials .men {
+        width: 60%;
+    }
+
+    .packages .tabs {
+    justify-content: center;
+    margin-bottom: 20px;
+}
+}
+
+@media only screen and (max-width:767px) {
+    .work .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .testimonials .men {
+        width: 100%;
+    }
+}
